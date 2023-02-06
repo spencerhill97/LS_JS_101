@@ -1,0 +1,105 @@
+- A function that returns the sum of two integers
+
+START
+
+# given two integers
+
+IF parameter one && parameter two are falsy
+  PRINT undefined
+IF parameter one || parameter two are falsy
+  PRINT parameter that is truthy
+ELSE
+  PRINT parameter one + parameter two
+
+END
+--------------------------------------------------------------------------------
+
+- A function that takes an array of strings, and returns a string that is all those 
+strings concatenated together
+
+START
+
+# given an array of strings
+
+SET result = invoke join() method on parameter and delimit each element with a space
+
+PRINT result
+
+END
+--------------------------------------------------------------------------------
+
+- A method that takes an array of integers, and returns a new array with every other 
+element from the original array, starting with the first element
+
+START 
+
+# given an array of integers
+
+SET iterator = 0
+SET result = empty array
+
+WHILE iterator < length of parameter
+	SET currentElement = value within parameter at iterator
+	IF iterator % 2 === 0
+		append currentElement to result
+	
+	iterator = iterator + 1
+
+PRINT result
+
+END
+--------------------------------------------------------------------------------
+
+- A function that determines the index of the 3rd occurrence of a given character in a string.
+For instance, if the given character is 'x' and the string is 'axbxcdxex', the function 
+should return 6 the index of the 3rd 'x'. If the given character does not occur at least 
+3 times, return null. 
+
+START
+
+# given a character and a string
+
+SET count = 0
+SET iterator = 0
+
+While iterator < length of string || count < 3
+  SET currentChar = value withing string at iterator
+  IF currentChar === character
+    count = count + 1
+
+  iterator = iterator + 1
+
+// Ternary operator
+IF count === 3
+  PRINT iterator - 1
+ELSE
+  PRINT null
+
+END
+--------------------------------------------------------------------------------
+
+- a function that takes two arrays of numbers and returns the result of merging the arrays.
+The elements of the first array should become the elements at the even indexes of the
+returned array, while the elements of the second array should become the elements
+at the odd indexes.
+
+START
+
+# given two arrays
+
+SET result = empty array
+SET iteartor = 0
+SET length = length of array one // assuming both arrays are the same length
+
+WHILE length > iterator
+  IF (array one or array)
+    break out of loop execution
+
+  append the value at iterator for array one and array two to the result array
+  
+  iterator = iterator + 1
+
+PRINT result
+
+END
+  
